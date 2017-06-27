@@ -1,2 +1,2 @@
 index.php
-<?php include "indeex.html" ?>
+<?php include "index.html" ?>

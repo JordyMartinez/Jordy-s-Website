@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab*/
+div.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+	background-color: #ddd;
+}
+
+/* Create an active/current tablink class*/
+div.tab button.active {
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+
+	<button class="tablinks" onclick="openPersonals(event,'Home')"
+	id="defaultOpen">Home</button>
+
+	<button class="tablinks" onclick="openPersonals(event,'Lightbulb Challenge')">Lightbulb Challenge</button>
+
+	<button class="tablinks" onclick="openPersonals(event,'Entrepreneur')">Entrepreneur</button>
+
+	<button class="tablinks" onclick="openPersonals(event,'Journals')">Journals</button>
+
+	<button class="tablinks" onclick="openPersonals(event,'Google API')">Google API</button>
+</div>
+
+<div id="Home" class="tabcontent">
+<p>July 28, 2017</p>
+<h1>Jordy Martinez</h1>
+	<img src="https://pbs.twimg.com/profile_images/828745704449282048/gndwrdEx.jpg">
+<br>
+<h2>Hobbies:</h2>
+<h3>Soccer</h3>
+<img src="http://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Articles/Soccer+Tips/carousel.jpg">
+	<p>My name is Jordy Martinez and I’ve been playing soccer ever since middle school. I never got to know my Dad but my Step Dad always watched soccer on television. He watched the BBVA league and the the Mexican league. And every 4 years my uncles would meet and fight over who the best national team in the world was, that is why I chose to play soccer. Because I wanted to enjoy the things they enjoyed. I also feel like I chose to play soccer instead of other sports like basketball and football like my other friends do, because I come from a hispanic background. In Guatemala kids mostly play soccer just like many other central American countries. It sounds stereotypical but it’s true. My favorite thing about soccer is that it takes passion to play the sport. You can’t be a great soccer player if you don’t have the desire to be better. In my sophomore year varsity soccer team I noticed that the best players were those who had passion for soccer and those who wanted to be better every practice. The ones who were there just because they like soccer usually were the clumsy players with no ball control. Personally, I believe I am a moderate soccer player. I.m not too shabby but I,m also not the best in the team. I’ve gotten use to being a  moderate and average person. But after joining TXT I have developed the desire to become the best at whatever I love.</p>
+
+<h3> Video Games</h3>
+<img src="http://images.huffingtonpost.com/2016-05-09-1462819580-1765342-thumbnail_videogamecontrollers640.jpg">
+	<p> My second hobby would have to be video games. I have loved video games ever since I was a kid. My cousin Michael Estrada introduced me to video games. After he got his DS I asked my mom for one too. My Mom has always been the one who buys me video games and I'm thankful for that. After the DS I followed my cousins footsteps and got every new console that was released for example, the XBOX, PSP, DS, Wii, and so on. Video games has always been my go to when I'm bored or even stressed. Not only is video games my source for entertainment, it is my source for friendships. I have met a lot of my friends from uniting to play FIFA a soccer game. Whenever I want to bond with a friend I invite them over to play a game. To this day, I still have a passion and addiction for video games. I need to have a game on my phone or play a game on my computer. </p>
+
+<h3> Organizing and Planning</h3>
+<img src="https://i5.walmartimages.com/dfw/4ff9c6c9-bc16/k2-_b84c85bc-a7da-4b73-857b-dd40de1cae14.v2.jpg">
+	<p> I know this sounds wierd but I like organizing. I usually organize my room at the end of the week or after a road trip. When I organize, I take hours because I like taking my time to keep things neat. Also because I have a bad habit of startiing to organize something and then forgettiing to finish organizing it. Not only do I like organizing, I like remodleing and redesigning my room. I get bored of seeing the same things over and over again so I constantly add and replace my furniture. I love seeing things neat and tighty and believe organizing is valuable and appealing to the eye. Lastly, planning my day and week is vital. I can't go through my day without knowing what I'm going to do and where I'm going. I use the calender on my phone and agendas to plan my day and set reminders. </p>
+
+<h3> Most Recent Links:</h3>
+<a href="https://www.instagram.com/?hl=en">
+	<img src="https://media.giphy.com/media/uo6rcjwHSAFsQ/giphy.gif"
+
+	style="width: 250px;height: 250px;border: 0"></a>
+
+<a href="https://www.youtube.com/">
+	<img src="https://media.giphy.com/media/tPKcEhgS1ze4o/giphy.gif"
+
+	style="width: 250px;height: 250px;border: 0"></a>
+
+<a href="https://www.google.com/gmail/about/">
+	<img src="https://media.giphy.com/media/aOften89vRbG/giphy.gif"
+
+	style="width: 250px;height: 250px;border: 0"></a>
+</div>
+
+<script>
+function openPersonals(evt,PersonalsName) {
+	var i, tabcontent,
+	tablinks;
+		tabcontent =
+document.getElementsByClassName
+("tabcontent");
+	for (i = 0; i <
+tabcontent.length; i++) {
+
+tabcontent[i].style.display = "none";
+		}
+		tablinks =
+document.getElementsByClassName
+("tablinks");
+	for (i = 0; i <
+tablinks.length; i++) {
+			tablinks[i].className =
+tablinks[i].className.replace("active","");
+	}
+
+document.getElementById(PersonalsName).style.display = "block";
+	evt.currentTarget.className += "active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

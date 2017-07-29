@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+	position: relative;
+	width:50%;
+	}
+
+	.image {
+		display: block;
+		width: 100%;
+		height: auto;
+		}
+
+		.overlay {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			overflow: hidden;
+			width: 100%;
+			height: 0;
+			transition: .5s ease;
+			}
+
+			.container:hover .overlay {
+				height: 100%;
+				}
+
+				</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<a href="#" class="hover-change-img"><img src="https://www.w3schools.com/js/pic_bulboff.gif" class="img-responsive"></a>
+
+<script>
+
+    $("document").ready(function(){ 
+        $(".hover-change-img img").mouseenter(function(){       
+            $(this).attr('src','https://www.w3schools.com/js/pic_bulbon.gif'); 
+         
+            $(this).attr('src','http://ii.wbshop.com/fcgi-bin/iipsrv.fcgi?FIF=/images/warnerbros/source/warnerbros/hpnbwandlu.tif&wid=500&cvt=jpeg');     
+        });     
+        $(".hover-change-img img").mouseleave(function(){       
+            $(this).attr('src','https://www.w3schools.com/js/pic_bulboff.gif');      
+        }); 
+    });
+
+</script>
+
+</head>
+</html>

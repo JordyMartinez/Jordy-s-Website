@@ -1,0 +1,29 @@
+<div id="Google API" class="tabcontent">
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var hawthorne = {lat: 33.9138036, lng: -118.3542577};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: hawthorne
+        });
+        var marker = new google.maps.Marker({
+          position: hawthorne,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFmciJK_3P-rfegutmTddt94ydD6vfikU&callback=initMap">
+    </script>
+  </body>

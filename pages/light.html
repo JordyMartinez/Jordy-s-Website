@@ -1,0 +1,29 @@
+<div id="Lightbulb Challenge" class="tabcontent">
+<h3>Light Bulb Challenge</h3>
+<script>
+
+function light(sw) {
+	var pic;
+	if (sw == 0) {
+		pic = "https://www.w3schools.com/js/pic_bulboff.gif"
+			} else {
+		pic = "https://www.w3schools.com/js/pic_bulbon.gif"
+	}
+
+document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage"
+src="https://www.w3schools.com/js/pic_bulboff.gif"
+width="100px" height="180px">
+
+<p>
+<button type="button"
+onclick="light(1)">Light On</button>
+
+<button type="button"
+onclick="light(0)">Light Off</button>
+
+</p>
+</div>
